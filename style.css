@@ -1,0 +1,95 @@
+@font-face{
+    font-family: 'JetBrainsMono';
+    src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Regular.woff') format('woff'),
+      url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/ttf/JetBrainsMono-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+#game {
+    width: 100%;
+    height: 100%;
+    /* center everything on the page */ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#titre{
+    font-size: 64px;
+    color: #16a085;
+    text-shadow: 5px 5px #c0392b;
+    
+}
+  body {
+    font-family: system-ui;
+    background-color: #1abc9c;
+  }
+.titre {
+    text-align: center;
+}
+.global-container
+{
+    display: flex;
+    justify-content: space-around;
+    gap: 4px;
+}
+th {
+    border: 10px solid black;
+    width: 100px;
+    height:100px;
+    padding: 15px;
+    border-radius: 15px;
+    background-image: url("assets/potato-6.png");
+    background-size: 100%;
+    background-color: #f1c40f;
+    cursor: pointer;
+    font-size: 50px;
+    perspective: 1000px;
+    transform: scale(1);
+    transition: transform .5s;
+}
+
+.cardoff {
+    transition: transform .5s;
+    transform: rotateY(360deg);
+    
+}
+
+table
+{
+    
+    border-radius: 25px;
+}
+
+
+.tiles.flip {
+    transform: rotateY(180deg);
+  }
+
+
+  button {
+    background-color: #16a085;
+    border: none;
+    color: #1abc9c;
+    font-weight: 900;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 32px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 25px;
+    font-family: 'JetBrainsMono';
+    text-shadow: 5px 5px #c0392b;
+  }
+
+  #resetGame {
+      display: none;
+  }
+
+  #timer {
+      color: #16a085;
+  }
